@@ -1,0 +1,50 @@
+.Header-logo {
+  animation: Header-logo-spin infinite 20s linear;
+  height: 80px;
+}
+@keyframes Header-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+
+
+.headerContainer{
+    margin-bottom: 10px;
+    background-color: #DDD;
+    display: block;
+    width: 100%;
+    min-height: 60px;
+    border: 1px solid red;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+
+}
+.headerLogo{
+    width: 80px;
+}
+.headerInfo{
+    width: 70%;
+    overflow: hidden; /* всё, что выходит за рамки блока обрезается */
+    white-space: nowrap; /* блок может содержать не более одной строки */
+    text-align: center;
+    height: 5em;  /* не в % */
+    line-height: 5em; /* не поддерживается Opera Mini [opera.com] */
+}
+.headerLogo, .headerInfo {
+  	border: 1px solid #999999;
+  	float: left;
+  	height: 17px;
+  	overflow: hidden;
+  	padding: 3px 1.8%;
+  	height: 80px;
+}
+.headerContainer:after {
+  	visibility: hidden;
+  	display: block;
+  	font-size: 0;
+  	content: " ";
+  	clear: both;
+  	height: 10;
+}
